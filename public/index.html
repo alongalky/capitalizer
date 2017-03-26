@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capitalizer</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="css/capsify.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/capsify.js"></script>
+</head>
+<body>
+  <div class='container-fluid'>
+    <div class='row title'>
+      <center>
+        <h1>Capsify</h1>
+      </center>
+    </div>
+    <div class='row'>
+      <center>
+        <h3>Finally, I can capitalize my strings online!</h3>
+      </center>
+    </div>
+    <div class='row capsify-row'>
+      <div class='col-sm-8'>
+        <textarea id='capsify-textarea' class='caps-text-area' placeholder='Text to capsify...'></textarea>
+      </div>
+      <div class='col-sm-4'>
+        <center>
+          <button class='btn btn-success' onclick='onCapsifyClick()'>
+            <strong>
+              Capsify!
+            <strong>
+          </button>
+        </center>
+      </div>
+    </div>
+    <footer>
+      <p>(c) 2017, the Capsify corp.</p>
+    </footer>
+  </div>
+</body>
+</html>
