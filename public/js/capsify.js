@@ -6,7 +6,7 @@ var capitalize = function (word) {
   return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase()
 }
 
-var onCapsifyClick = function () {
+var onTextChange = function () {
   var textarea = document.getElementById('capsify-textarea')
   var newValue = textarea.value.replace(/\w+/g, capitalize)
   textarea.value = newValue

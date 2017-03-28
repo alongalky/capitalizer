@@ -23,20 +23,16 @@
     </div>
     <div class='row'>
       <center>
-        <h3>Finally, I can capitalize my strings online!</h3>
+        <h3>The numero uno name capitalizer</h3>
+        <p>Turn <i>JUAN</i> into <i>Juan</i> in a gippy!</p>
       </center>
     </div>
     <div class='row capsify-row'>
       <div class='col-sm-8'>
-        <textarea id='capsify-textarea' class='caps-text-area' placeholder='Text to capsify...'></textarea>
+        <textarea id='capsify-textarea' class='caps-text-area' placeholder='Text to capsify...' onkeyup="onTextChange()" onblur="onTextChange()"></textarea>
       </div>
       <div class='col-sm-4'>
         <center>
-          <button class='btn btn-success' onclick='onCapsifyClick()'>
-            <strong>
-              Capsify!
-            <strong>
-          </button>
           <button id='btn-copy' class="btn" data-clipboard-action="copy" data-clipboard-target="#capsify-textarea">
               Copy to clipboard
           </button>
