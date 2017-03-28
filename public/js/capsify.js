@@ -11,3 +11,13 @@ var onTextChange = function () {
   var newValue = textarea.value.replace(/\w+/g, capitalize)
   textarea.value = newValue
 }
+
+// Initialize clipboard.js
+var btn = document.getElementById('btn-copy')
+var clipboard = new Clipboard(btn)
+clipboard.on('success', function (e) {
+  console.log(e)
+})
+clipboard.on('error', function (e) {
+  console.log(e)
+})
